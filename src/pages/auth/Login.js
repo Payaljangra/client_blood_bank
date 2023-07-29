@@ -4,14 +4,13 @@ import { useSelector } from "react-redux";
 import Spinner from "./../../components/shared/Spinner";
 import LoginImg from "./../../images/bannerr.jpg";
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const { loading, error } = useSelector((state) => state.auth);
   return (
     <>
-      {/* {error && <span>{alert(error)}</span>} */}
-      {error && <span>{toast.error(error)}</span>}
+      {error && <span>{alert(error)}</span>}
+      {/* {error && <span>{toast.error(error)}</span>} */}
       {loading ? (
         <Spinner />
       ) : (
