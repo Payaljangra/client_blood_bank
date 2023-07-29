@@ -24,7 +24,6 @@ const Form = ({ formType, submitBtn, formTitle }) => {
               e,
               name,
               role,
-
               email,
               password,
               phone,
